@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Archidiecezjalne Studium Życia Rodzinnego</title>
+    <%= stylesheet_link_tag "reset", "text", "960", "scaffold", :cache => true, :recursive => true %>
+    <%= javascript_include_tag "jquery.min", "application", :cache => true, :recursive => true %>
+  </head>
+  <body>
+
+    <!-- LOGO -->
+    <div id="logo">
+      <div class="container_16">
+        <div class="grid_1">&nbsp;</div>
+        <div class="grid_14">
+          Archidiecezjalne Studium Życia Rodzinnego
+        </div>
+        <div class="grid_1">&nbsp;</div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <!-- TOP MENU -->
+    <div id="menu">
+      <div class="container_16">
+        <div class="grid_1">&nbsp;</div>
+        <div class="grid_14">
+          <span><%= link_to 'Strona główna', '#' %></span>
+          <span><%= link_to 'Informacje o studium', '#' %></span>
+          <span><%= link_to 'Terminarz spotkań', '#' %></span>
+          <span><%= link_to 'III rok', '#' %></span>
+          <span><%= link_to 'Cel i struktura', '#' %></span>
+          <span><%= link_to 'Statut', '#' %></span>
+          <span><%= link_to 'Wykładowcy', '#' %></span>
+          <span><%= link_to 'Program zajęć', '#' %></span>
+          <span><%= link_to 'Wymagane dokumenty', '#' %></span>
+          <span><%= link_to 'Galeria zdjęć', '#' %></span>
+        </div>
+        <div class="grid_1">&nbsp;</div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <!-- FLASH MESSAGE -->
+    <div id="flash_message">
+      <% if flash[:notice] %>
+        <p id="flash_notice"><%= flash[:notice] %></p>
+        <% flash[:notice] = nil %>
+      <% end %>
+      <% if flash[:error] %>
+        <p id="flash_error"><%= flash[:error] %></p>
+        <% flash[:error] = nil %>
+      <% end %>
+    </div>
+    <div class="clear"></div>
+
+    <!-- CONTENT -->
+    <div id="main" class="container_16">
+      <div class="grid_1">&nbsp;</div>
+      <div class="grid_14">
+        <%= yield %>
+      </div>
+      <div class="grid_1">&nbsp;</div>
+    </div>
+    <div class="clear"></div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <div>
+        <span>Copyright MacGajek 2010</span>
+      </div>
+    </div>
+
+  </body>
+</html>
