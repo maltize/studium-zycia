@@ -2,12 +2,13 @@
 
 one:
   id: 1
-  title: MyString
-  content: MyText
-  status: 1
+  name: MyString
+  lft: 1
+  rgt: 4
 
 two:
   id: 2
-  title: MyString
-  content: MyText
-  status: 1
+  name: MyString
+  parent_id: 1
+  lft: 2
+  rgt: 3

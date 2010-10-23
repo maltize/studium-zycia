@@ -1,5 +1,7 @@
 StudiumZycia::Application.routes.draw do
 
+  resources :categories
+
   resources :pages
 
   resources :wysihat_files
