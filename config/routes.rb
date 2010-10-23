@@ -1,5 +1,9 @@
 StudiumZycia::Application.routes.draw do
 
+  resources :pages
+
+  resources :wysihat_files
+
   root :to => "home#index"
 
   # The priority is based upon order of creation:

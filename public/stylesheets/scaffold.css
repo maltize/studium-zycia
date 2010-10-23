@@ -78,11 +78,11 @@ a img {
 }
 
 #flash_message #flash_notice {
-  background-color: #66B3FF;
+  background-color: #FFF218;
 }
 
 #flash_message #flash_error {
-  background-color: #005CB8;
+  background-color: #FF7218;
 }
 
 table {
@@ -148,7 +148,6 @@ table {
 
 #main .grid_14 table {
   margin-bottom: 0;
-  background-color: #000;
 }
 
 input[type="text"] {
