@@ -128,8 +128,8 @@ pl:
         invalid: "jest nieprawidłowe"
         confirmation: "nie zgadza się z potwierdzeniem"
         accepted: "musi być zaakceptowane"
-        empty: "nie może być puste"
-        blank: "nie może być puste"
+        empty: "nie może być pusty"
+        blank: "nie może być pusty"
         too_long: "jest za długie (maksymalnie {{count}} znaków)"
         too_short: "jest za krótkie (minimalnie {{count}} znaków)"
         wrong_length: "jest nieprawidłowej długości (powinna wynosić {{count}} znaków)"
@@ -144,6 +144,14 @@ pl:
         odd: "musi być nieparzyste"
         even: "musi być parzyste"
         record_invalid: "Negatywne sprawdzenie poprawności: {{errors}}"
+
+    models:
+      page: "Strona"
+    attributes:
+      page:
+        title: "Tytuł"
+        content: "Treść"
+        status: "Status"
 
   support:
     array:

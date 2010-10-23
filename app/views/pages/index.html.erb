@@ -1,27 +1,25 @@
-<h1>Listing pages</h1>
+<h1>Dostępne strony</h1>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Content</th>
-    <th>Status</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Tytuł</th>
+    <th>Nad-strona</th>
+    <th>Opcje</th>
   </tr>
 
 <% @pages.each do |page| %>
   <tr>
     <td><%= page.title %></td>
-    <td><%= page.content %></td>
-    <td><%= page.status %></td>
-    <td><%= link_to 'Show', page %></td>
-    <td><%= link_to 'Edit', edit_page_path(page) %></td>
-    <td><%= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= page.parent.try(:title) %></td>
+    <td>
+      <%= link_to 'Pokaż', page %> |
+      <%= link_to 'Edytuj', edit_page_path(page) %> |
+      <%= link_to 'Usuń', page, :confirm => 'Czy jesteś pewien?', :method => :delete %>
+    </td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Page', new_page_path %>
+<%= link_to 'Nowa strona', new_page_path %>

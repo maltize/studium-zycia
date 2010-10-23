@@ -40,7 +40,7 @@ class PagesControllerTest < ActionController::TestCase
   end
 
   test "should destroy page" do
-    assert_difference('Page.count', -1) do
+    assert_difference('Page.count', -2) do
       delete :destroy, :id => @page.to_param
     end
 

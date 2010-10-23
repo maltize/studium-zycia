@@ -1,8 +1,9 @@
 require 'test_helper'
 
 class PageTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
+
+  def test_should_be_valid
+    assert pages(:one).valid?
+    assert pages(:two).valid?
   end
 end
