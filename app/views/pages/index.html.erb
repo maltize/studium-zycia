@@ -4,22 +4,12 @@
   <tr>
     <th>Tytuł</th>
     <th>Nad-strona</th>
-    <th>Opcje</th>
   </tr>
 
 <% @pages.each do |page| %>
   <tr>
     <td><%= page.title %></td>
     <td><%= page.parent.try(:title) %></td>
-    <td>
-      <%= link_to 'Pokaż', page %> |
-      <%= link_to 'Edytuj', edit_page_path(page) %> |
-      <%= link_to 'Usuń', page, :confirm => 'Czy jesteś pewien?', :method => :delete %>
-    </td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'Nowa strona', new_page_path %>

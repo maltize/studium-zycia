@@ -1,4 +1,4 @@
-<%= form_for(@page) do |f| %>
+<%= form_for([:admin, @page]) do |f| %>
   <% if @page.errors.any? %>
     <div id="error_explanation">
       <h2>Strona nie została zapisana, ponieważ:</h2>
