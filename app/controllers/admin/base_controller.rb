@@ -4,7 +4,7 @@ class Admin::BaseController < ApplicationController
 
   USER_NAME, PASSWORD = "jacekreczek", "jacekreczek.123"
 
-  before_filter :authenticate unless RAILS_ENV == 'test'
+  before_filter :authenticate unless Rails.env == 'test'
 
 private
 

@@ -1,6 +1,8 @@
 StudiumZycia::Application.routes.draw do
 
   namespace :admin do
+    match '/' => 'base#index'
+
     resources :pages
   end
 
