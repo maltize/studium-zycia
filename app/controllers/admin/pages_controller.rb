@@ -1,7 +1,7 @@
 class Admin::PagesController < Admin::BaseController
 
   def index
-    @pages = Page.all
+    @pages = Page.root.self_and_descendants
   end
 
   def show
@@ -42,4 +42,17 @@ class Admin::PagesController < Admin::BaseController
 
     redirect_to(admin_pages_path)
   end
+
+  def move_up
+    @page = Page.find(params[:id])
+    @page.move_left if @page.left_sibling
+    redirect_to(admin_pages_path)
+  end
+
+  def move_down
+    @page = Page.find(params[:id])
+    @page.move_right if @page.right_sibling
+    redirect_to(admin_pages_path)
+  end
+
 end

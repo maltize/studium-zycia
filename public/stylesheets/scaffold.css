@@ -1,5 +1,5 @@
 body {
-  background-color: #EEF8EA;
+  background-color: #fff;
   color: #000;
 }
 
@@ -87,7 +87,7 @@ a img {
 
 table {
   border-collapse: separate !important;
-  border-spacing: 5px !important;
+  border-spacing: 15px 5px !important;
 }
 
 #logo {
@@ -120,11 +120,8 @@ table {
   text-decoration: underline;
 }
 
-#main {
-  margin-top: 20px;
-}
-
 #main .grid_12 {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -151,4 +148,18 @@ textarea {
 
 .hidden {
   display: none;
+}
+
+.grid_4 ul {
+  list-style-type: none;
+  background-color: #FFB218;
+  padding: 10px 0;
+}
+
+.grid_4 ul li {
+  margin-left: 10px;
+}
+
+.bold {
+  font-weight: bold;
 }

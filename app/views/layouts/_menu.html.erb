@@ -1,0 +1,9 @@
+<ul>
+  <% Page.root.self_and_descendants.each_with_index do |page, i| %>
+    <li class="<%= 'bold' if request.path == page_path(page) || (request.path == '/' && i == 0) %>">
+      <div style="margin-left:<%= (page.level > 1 ? page.level - 1 : 0) * 5 %>px">
+        <%= link_to page.title, page %>
+      </div>
+    </li>
+  <% end %>
+</ul>

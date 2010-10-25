@@ -46,4 +46,19 @@ class Admin::PagesControllerTest < ActionController::TestCase
 
     assert_redirected_to admin_pages_path
   end
+
+  test "should move up page" do
+    put :move_up, :id => @page.to_param
+
+    assert_not_nil assigns(:page)
+    assert_redirected_to admin_pages_path
+  end
+
+  test "should move down page" do
+    put :move_down, :id => @page.to_param
+
+    assert_not_nil assigns(:page)
+    assert_redirected_to admin_pages_path
+  end
+
 end

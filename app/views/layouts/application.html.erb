@@ -36,11 +36,7 @@
     <!-- CONTENT -->
     <div id="main" class="container_16">
       <div class="grid_4">
-        <ul>
-          <% Page.root.self_and_descendants.each do |page| %>
-            <li><%= link_to page.title, page %></li>
-          <% end %>
-        </ul>
+        <%= render :partial => 'layouts/menu' %>
       </div>
       <div class="grid_12">
         <%= yield %>
