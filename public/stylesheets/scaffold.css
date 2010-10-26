@@ -167,3 +167,16 @@ textarea {
 .bold {
   font-weight: bold;
 }
+
+#facebox table {
+  border-collapse: collapse !important;
+}
+
+#facebox .body {
+  padding: 10px 20px 10px 10px !important;
+}
+
+#facebox .body #file_list {
+  height: 200px;
+  overflow: auto;
+}

@@ -9,7 +9,7 @@ class WysihatFilesController < ApplicationController
 
     responds_to_parent do
       render :update do |page|
-        if(@wysihat_file.save)
+        if @wysihat_file.save
           page.insert_html :bottom, :wysihat_files, :partial => 'wysihat_file', :object => @wysihat_file
         end
       end

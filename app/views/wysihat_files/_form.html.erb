@@ -1,13 +1,13 @@
-<% form_for @wysihat_file, :html => { :multipart => true, :target => 'file_upload' } do |f| %>
+<%= form_for @wysihat_file, :html => { :multipart => true, :target => 'file_upload' } do |f| %>
 
 	<%= f.hidden_field(:editor, :value => params[:editor]) %>
 
   <p>
-    <%= f.label :file %><br/>
+    <%= f.label :file, 'Wybierz plik z dysku' %><br/>
     <%= f.file_field :file %>
   </p>
   <p>
-    <%= f.submit %>
+    <%= f.submit 'Dodaj', :onclick => '$("facebox").hide();' %>
   </p>
 
 <% end %>
