@@ -10,7 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101023212353) do
+ActiveRecord::Schema.define(:version => 20101101141353) do
+
+  create_table "feedbacks", :force => true do |t|
+    t.string   "username"
+    t.text     "message"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pages", :force => true do |t|
     t.string   "title"

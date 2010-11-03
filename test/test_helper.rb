@@ -10,4 +10,9 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+
+  def deny condition, msg = nil
+    assert !condition, msg
+  end
+
 end

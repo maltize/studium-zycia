@@ -152,6 +152,9 @@ pl:
         title: "Tytuł"
         content: "Treść"
         status: "Status"
+      feedback:
+        username: "E-mail"
+        message: "Treść"
 
   support:
     array:

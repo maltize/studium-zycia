@@ -12,6 +12,7 @@ StudiumZycia::Application.routes.draw do
   end
 
   resources :pages
+  resources :feedbacks
 
   resources :wysihat_files
 
