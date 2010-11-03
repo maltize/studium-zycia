@@ -1,6 +1,6 @@
 class UserMailer < ActionMailer::Base
 
-  FEEDBACK_EMAIL = "maltize@gmail.com"
+  FEEDBACK_EMAIL = "jacek@studium-zycia.pl"
 
   def feedback_email(feedback)
     @feedback = feedback
