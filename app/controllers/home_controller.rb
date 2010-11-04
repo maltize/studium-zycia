@@ -1,7 +1,8 @@
 class HomeController < ApplicationController
 
   def index
-    @content = Page.root.try(:content)
+    @page = Page.root
+    @content = @page.try(:content)
   end
 
 end
