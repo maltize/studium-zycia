@@ -1,5 +1,7 @@
 class FeedbacksController < ApplicationController
 
+  before_filter :default_page
+
   def new
     @feedback = Feedback.new
   end
