@@ -5,8 +5,7 @@ class UserMailer < ActionMailer::Base
   def feedback_email(feedback)
     @feedback = feedback
     mail(:from => feedback.username, :to => FEEDBACK_EMAIL,
-      :subject => "Studium-Zycia.pl - Wiadomość z serwisu",
-      :content_type => "multipart/alternative")
+      :subject => "Studium-Zycia.pl - Wiadomość z serwisu")
   end
 
 end
