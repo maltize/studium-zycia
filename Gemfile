@@ -7,9 +7,7 @@ gem 'rails', '3.0.1'
 
 gem 'mysql2'
 
-group :development, :test, :production do
-  gem 'wysihat-engine'
-end
+gem 'wysihat-engine'
 
 # Use unicorn as the web server
 # gem 'unicorn'
