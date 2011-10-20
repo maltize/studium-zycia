@@ -5,9 +5,9 @@ gem 'rails', '3.0.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+gem 'mysql2', '0.2.4'
 
-gem 'wysihat-engine'
+gem 'wysihat-engine', '0.1.13'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -25,7 +25,7 @@ gem 'wysihat-engine'
 # gem 'aws-s3', :require => 'aws/s3'
 
 group :development do
-  gem 'mongrel'
+  gem 'mongrel', '1.1.5'
 end
 
 # Bundle gems for the local environment. Make sure to

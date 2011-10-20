@@ -83,7 +83,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  mongrel
-  mysql2
+  mongrel (= 1.1.5)
+  mysql2 (= 0.2.4)
   rails (= 3.0.1)
-  wysihat-engine
+  wysihat-engine (= 0.1.13)
